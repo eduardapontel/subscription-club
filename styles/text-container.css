@@ -1,0 +1,46 @@
+#text-container {
+    position: relative;
+    margin-top: 32px;
+    & p {
+        color: var(--text-body);
+        font: var(--body-md);
+        padding: 80px 20px;
+
+        &::after {
+            content: 'Receba todo mês um livro surpresa do seu tema favorito, acompanhado de brindes exclusivos que tornarão a sua experiência literária ainda mais encantadora.';
+        }
+    }
+
+    & img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        flex-shrink: 0;
+
+    }
+
+    & img[src*='book'], & img[src*='ball'] {
+        width: 40px;
+        height: 40px;
+        transform: rotate(15deg);
+    }
+
+    & img[src*='book']{
+        top: 28px;
+        right: 75px;
+    }
+
+    & img[src*='ouija'] {
+        width: 32px;
+        height: 32px;
+        transform: rotate(-30deg);
+        left: 14px;
+        bottom: 50px;
+    }
+
+    & img[src*='ball'] {
+        bottom: 30px;
+        right: 20px;
+    }
+}
