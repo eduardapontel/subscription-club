@@ -1,0 +1,140 @@
+#kit {
+    display: flex;
+    padding: 6.5rem 0 5.5rem 0;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 4rem;
+
+    & .flex {
+        align-items: center;
+        gap: 1rem;
+
+        & h3 {
+            color: var(--text-body);
+            text-align: center;
+            font-family: Raleway;
+            font-size: 1.5rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+    }
+
+    & p {
+        margin-top: 0.5rem;
+        font: var(--body-sm);
+        color: var(--text-body);
+    }
+
+    & #images-container {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        margin-top: 4rem;
+
+        & #book-image {
+            position: relative;
+            background: url(../assets/images/book.png) no-repeat center / cover;
+            margin: auto;
+            width: 10rem;
+            height: 13rem;
+
+            & .text {
+                position: absolute;
+                color: var(--text-body);
+                text-align: center;
+                font-family: Raleway;
+                font-size: 0.625rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+
+            & #text-1 {
+                top: -20%;
+                left: -48%;
+            }
+
+            & img[src='./assets/icons/arrow-1.svg'] {
+                position: absolute;
+                width: 3.625rem;
+                height: 0.625rem;
+                top: -5%;
+                left: -30%;
+            }
+
+            & #text-2 {
+                bottom: 42%;
+                left: -47%;
+            }
+
+            & img[src='./assets/icons/arrow-2.svg'] {
+                position: absolute;
+                width: 2.1875rem;
+                height: 2.6875rem;
+                bottom: 17%;
+                left: -38%;
+            }
+
+            & #text-3 {
+                bottom: -20%;
+                right: -37%;
+            }
+
+            & img[src='./assets/icons/arrow-3.svg'] {
+                position: absolute;
+                width: 3.0625rem;
+                height: 3.1875rem;
+                bottom: -12%;
+                right: -30%;
+            }
+
+            & img[src='./assets/images/bookmark-purple.png'] {
+                position: absolute;
+                right: 0;
+                bottom: 7%;
+                translate: 120%;
+                width: 3.625rem;
+                height: 11.25rem;
+                transform: rotate(22deg);
+                z-index: -2;
+            }
+
+            & img[src='./assets/images/bookmark-yellow.png'] {
+                position: absolute;
+                right: 0;
+                bottom: 23%;
+                translate: 67%;
+                width: 3.625rem;
+                height: 11.25rem;
+                transform: rotate(11deg);
+                z-index: -1;
+            }
+
+            & img[src='./assets/images/pin.png'] {
+                position: absolute;
+                left: 0;
+                bottom: -15%;
+                translate: -62%;
+                width: 4.5rem;
+                height: 5.31rem;
+                transform: rotate(-7.548deg);
+                z-index: -1;
+            }
+        }
+
+        & .blur {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            opacity: 0.5;
+            background: var(--pink-low);
+            filter: blur(6.5rem);
+        }
+    }
+}

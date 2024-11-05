@@ -63,7 +63,7 @@ button {
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     background: var(--pink-dark);
     color: var(--text-text-title);
     font: var(--button);
@@ -71,4 +71,8 @@ button {
 
 .desktop-only {
     display: none;
+}
+
+.flex {
+    display: flex;
 }

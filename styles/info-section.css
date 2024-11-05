@@ -1,4 +1,4 @@
-#text-container {
+#info-section {
     position: relative;
     margin-top: 32px;
     & p {
@@ -17,30 +17,30 @@
         align-items: center;
         position: absolute;
         flex-shrink: 0;
-
     }
 
-    & img[src*='book'], & img[src*='ball'] {
+    & img[src*='book'],
+    & img[src*='ball'] {
         width: 40px;
         height: 40px;
         transform: rotate(15deg);
     }
 
-    & img[src*='book']{
-        top: 28px;
-        right: 75px;
+    & img[src*='book'] {
+        top: 13%;
+        right: 22%;
     }
 
     & img[src*='ouija'] {
         width: 32px;
         height: 32px;
         transform: rotate(-30deg);
-        left: 14px;
-        bottom: 50px;
+        left: 5%;
+        bottom: 23%;
     }
 
     & img[src*='ball'] {
-        bottom: 30px;
-        right: 20px;
+        bottom: 13%;
+        right: 6%;
     }
 }
