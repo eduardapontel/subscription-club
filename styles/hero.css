@@ -2,6 +2,7 @@
     position: relative;
     width: 100vw;
     height: 32rem;
+    text-align: center;
 
     & nav {
         position: absolute;
@@ -10,17 +11,30 @@
         justify-content: space-between;
         align-items: center;
         padding: 1.25rem;
+
+        & #logo {
+            width: 64px;
+            height: 48px;
+            background: url(../assets/icons/logo-symbol.svg) no-repeat center / cover;
+        }
+
+        & button{
+            color: var(--text-title);
+        }
     }
 
     & .title {
-        position: absolute;
-        top: 7.25rem;
         display: flex;
+        align-items: center;
         flex-direction: column;
+        position: absolute;
+        width: 100%;
+        top: 7.25rem;
         gap: 1rem;
         padding-inline: 1.25rem;
 
         & > h1 {
+            width: 335px;
             color: var(--text-title);
             font-size: 1.75rem;
             font-weight: 700;
@@ -28,6 +42,7 @@
         }
 
         & > p {
+            width: 335px;
             color: var(--text-body);
             font-size: 0.875rem;
             font-weight: 400;
@@ -43,5 +58,37 @@
         justify-content: center;
         align-items: center;
         object-fit: cover;
+    }
+}
+
+@media (width >= 60em) {
+    #hero {
+        height: 948px;
+        & nav {
+            padding: 56px 160px 0 160px !important;
+
+            & #logo {
+                width: 230px !important;
+                height: 58px !important;
+                background: url(../assets/icons/logo-horizontal.svg) no-repeat center / cover !important;
+            }
+        }
+
+        & .title {
+            top: 278px;
+            height: 200px;
+            gap: 32px;
+            align-items: center;
+
+            & h1 {
+                font: var(--title-lg);
+                width: 656px;
+            }
+
+            & p {
+                font: var(--body-lg);
+                width: 568px;
+            }
+        }
     }
 }

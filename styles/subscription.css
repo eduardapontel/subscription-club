@@ -40,7 +40,7 @@
                     color: var(--pink-light) !important;
                 }
 
-                & button{
+                & button {
                     background: var(--pink-dark);
                 }
             }
@@ -127,6 +127,118 @@
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+@media (width >= 68em) {
+    #subscription {
+        padding: 101px 51px 195px 51px;
+        position: relative;
+        background: url(../assets/images/pricing-background.png) no-repeat center / cover;
+
+        & .desktop-only {
+            display: unset;
+        }
+
+        & h2 {
+            margin: 0;
+            z-index: 1;
+        }
+
+        & #cards {
+            margin-right: 0;
+            padding-top: 100px;
+            gap: 0;
+            justify-content: center;
+
+            & .star {
+                z-index: 1;
+                position: relative;
+            }
+
+            & #star-1 {
+                z-index: 1;
+                top: -200px;
+                right: 15px;
+            }
+
+            & #star-2 {
+                z-index: 1;
+                top: -170px;
+                right: 50px;
+            }
+
+            & #star-3 {
+                z-index: 1;
+                bottom: -220px;
+                left: -20px;
+            }
+
+            & #star-4 {
+                z-index: 1;
+                bottom: -240px;
+                left: -70px;
+            }
+
+            & .background-blur {
+                position: absolute;
+                width: 944px;
+                height: 944px;
+                border-radius: 50%;
+                top: auto;
+                left: auto;
+                right: auto;
+                bottom: auto;
+                background: var(--shape-base);
+                filter: blur(284px);
+                z-index: 0;
+            }
+
+            & .card {
+                width: 288px;
+                height: 416px;
+                z-index: 1;
+            }
+
+            & #monthly {
+                transform: rotate(-8deg);
+            }
+
+            & #biannual {
+                z-index: 2;
+                margin-bottom: 150px;
+                position: relative;
+
+                & #bunny-img {
+                    position: absolute;
+                    top: 0;
+                    transform: translateY(-100%);
+                }
+
+                & #tag {
+                    position: absolute;
+                    right: 24px;
+                    top: 23px;
+                    display: flex;
+                    padding: 9px 20px;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 8px;
+                    border-radius: 999px;
+                    background: var(--shape-stroke);
+
+                    & p {
+                        font: var(--tag) !important;
+                        color: var(--text-body);
+                        text-align: center;
+                    }
+                }
+            }
+
+            & #annual {
+                transform: rotate(8deg);
             }
         }
     }

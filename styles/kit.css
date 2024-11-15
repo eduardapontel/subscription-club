@@ -1,6 +1,6 @@
 #kit {
     display: flex;
-    padding: 6.5rem 0 5.5rem 0;
+    padding-block: 6.5rem 5.5rem;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
@@ -124,7 +124,84 @@
             border-radius: 50%;
             opacity: 0.5;
             background: var(--pink-low);
-            filter: blur(6.5rem);
+            filter: blur(300px);
+        }
+    }
+}
+
+@media (width >= 60em) {
+    #kit {
+        margin-bottom: 120px;
+        
+        & .desktop-only {
+            display: unset;
+        }
+
+        & .flex {
+            & img[src='./assets/icons/star.svg'] {
+                display: none;
+            }
+
+            & h2 {
+                font: var(--title-sm);
+            }
+        }
+
+        & p {
+            font: var(--body-md) !important;
+        }
+
+        & #book-image {
+            width: 467px !important;
+            height: 617px !important;
+
+            & img[src='./assets/images/bookmark-yellow.png'] {
+                width: 172px !important;
+                height: 536px !important;
+            }
+
+            & img[src='./assets/images/bookmark-purple.png'] {
+                width: 172px !important;
+                height: 536px !important;
+            }
+
+            & img[src='./assets/images/pin.png'] {
+                width: 222px !important;
+                height: 254px !important;
+            }
+
+            & img[src='./assets/icons/arrow-1.svg'] {
+                width: 174px !important;
+                height: 30px !important;
+            }
+
+            & img[src='./assets/icons/arrow-2.svg'] {
+                width: 104px !important;
+                height: 127px !important;
+            }
+
+            & img[src='./assets/icons/arrow-3.svg'] {
+                width: 145px !important;
+                height: 151px !important;
+            }
+
+            & .text {
+                font: var(--body-md) !important;
+            }
+
+            & #text-1 {
+                top: -13% !important;
+                left: -40% !important;
+            }
+
+            & #text-2 {
+                left: -42% !important;
+            }
+
+            & #text-3 {
+                bottom: -18% !important;
+                right: -18% !important;
+            }
         }
     }
 }

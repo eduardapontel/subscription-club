@@ -39,7 +39,7 @@
     --body-xs: 400 0.75rem / 1.4 'Raleway';
     --button: 700 0.875rem / normal 'Raleway';
     --link: 500 0.875rem / normal 'Raleway';
-    --tag: uppercase 700 0.625rem / normal 'Raleway';
+    --tag: 700 0.625rem / normal 'Raleway';
 }
 
 html {

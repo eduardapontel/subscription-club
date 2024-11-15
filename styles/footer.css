@@ -1,15 +1,18 @@
 footer {
     height: 100%;
-    background: url(../assets/images/book-trace-mobile.png) no-repeat center / cover;
+    background: url(../assets/images/book-trace-mobile.png) no-repeat top / cover;
 
     & #footer-content {
         display: flex;
+        flex-direction: column;
         width: 100%;
         gap: 40px 24px;
-        padding: 98px 32px 38px 32px;
-        flex-wrap: wrap;
+        padding: 0 32px 38px 32px;
+        flex-wrap: no-wrap;
+        align-items: center;
 
         & #brand {
+            padding-top: 20vw;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -28,9 +31,7 @@ footer {
                 justify-content: space-between;
                 align-items: center;
                 align-content: center;
-                row-gap: 1px;
                 align-self: stretch;
-                flex-wrap: wrap;
 
                 & button {
                     all: unset;
@@ -44,10 +45,6 @@ footer {
             }
         }
 
-        & .flex{
-            flex: 1 1;
-        }
-
         & .links-container {
             display: flex;
             width: 143px;
@@ -55,10 +52,9 @@ footer {
             justify-content: center;
             align-items: flex-start;
             gap: 20px;
-            flex-shrink: 0;
 
-            &#help{
-                margin-left: auto;
+            &#content {
+                margin-right: 24px;
             }
 
             & h4 {
@@ -84,6 +80,25 @@ footer {
 
                     font: var(--link);
                 }
+            }
+        }
+    }
+}
+
+@media (width >= 60em) {
+    footer {
+        background: url(../assets/images/book-trace-background.png) no-repeat top / cover;
+
+        & #footer-content {
+            flex-direction: row;
+            justify-content: space-around;
+
+            & #brand, .flex {
+                padding-top: 170px;
+            }
+
+            & .flex{
+                gap: 56px;
             }
         }
     }
