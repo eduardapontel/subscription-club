@@ -101,6 +101,11 @@
                     color: var(--text-title);
                     text-align: right;
                     font: var(--button);
+                    transition: filter 0.5s ease !important;
+
+                    &:hover{
+                        filter: brightness(1.3);
+                    }
                 }
 
                 & .decorated-lines {
@@ -149,7 +154,7 @@
 
         & #cards {
             margin-right: 0;
-            padding-top: 100px;
+            padding-block: 150px 50px;
             gap: 0;
             justify-content: center;
 
@@ -160,13 +165,13 @@
 
             & #star-1 {
                 z-index: 1;
-                top: -200px;
+                top: -230px;
                 right: 15px;
             }
 
             & #star-2 {
                 z-index: 1;
-                top: -170px;
+                top: -190px;
                 right: 50px;
             }
 
@@ -200,45 +205,52 @@
                 width: 288px;
                 height: 416px;
                 z-index: 1;
-            }
+                transition: all 0.3s ease;
 
-            & #monthly {
-                transform: rotate(-8deg);
-            }
-
-            & #biannual {
-                z-index: 2;
-                margin-bottom: 150px;
-                position: relative;
-
-                & #bunny-img {
-                    position: absolute;
-                    top: 0;
-                    transform: translateY(-100%);
+                &#monthly {
+                    transform: rotate(-8deg);
                 }
 
-                & #tag {
-                    position: absolute;
-                    right: 24px;
-                    top: 23px;
-                    display: flex;
-                    padding: 9px 20px;
-                    justify-content: center;
-                    align-items: center;
-                    gap: 8px;
-                    border-radius: 999px;
-                    background: var(--shape-stroke);
+                &#biannual {
+                    z-index: 2;
+                    bottom: 70px;
+                    position: relative;
 
-                    & p {
-                        font: var(--tag) !important;
-                        color: var(--text-body);
-                        text-align: center;
+                    & #bunny-img {
+                        position: absolute;
+                        top: 0;
+                        transform: translateY(-100%);
+                    }
+
+                    & #tag {
+                        position: absolute;
+                        right: 24px;
+                        top: 23px;
+                        display: flex;
+                        padding: 9px 20px;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 8px;
+                        border-radius: 999px;
+                        background: var(--shape-stroke);
+
+                        & p {
+                            font: var(--tag) !important;
+                            color: var(--text-body);
+                            text-align: center;
+                        }
                     }
                 }
-            }
 
-            & #annual {
-                transform: rotate(8deg);
+                &#annual {
+                    transform: rotate(8deg);
+                }
+
+                &:hover {
+                    z-index: 2;
+                    translate: 0 -25px !important;
+                    box-shadow: 0px 0px 66px 0px rgba(53, 139, 185, 0.1);
+                }
             }
         }
     }

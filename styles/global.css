@@ -86,3 +86,7 @@ h2 {
     font-weight: 700;
     line-height: normal;
 }
+
+.hidden {
+    opacity: 0;
+}

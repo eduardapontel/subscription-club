@@ -32,6 +32,11 @@
             margin: auto;
             width: 10rem;
             height: 13rem;
+            
+            & * {
+                bottom: 0;
+                transition: transform 0.5s ease, opacity 0.5s ease 0.5s;
+            }
 
             & .text {
                 position: absolute;
@@ -42,78 +47,72 @@
                 font-style: normal;
                 font-weight: 400;
                 line-height: normal;
+                z-index: -2;
             }
 
             & #text-1 {
-                top: -20%;
-                left: -48%;
+                transform: translate(37%, -1300%);
             }
 
             & img[src='./assets/icons/arrow-1.svg'] {
                 position: absolute;
                 width: 3.625rem;
                 height: 0.625rem;
-                top: -5%;
-                left: -30%;
+                z-index: -2;
+                transform: translate(30%, -1300%);
             }
-
+            
             & #text-2 {
-                bottom: 42%;
-                left: -47%;
+                transform: translate(37%, -800%);
             }
 
             & img[src='./assets/icons/arrow-2.svg'] {
                 position: absolute;
                 width: 2.1875rem;
                 height: 2.6875rem;
-                bottom: 17%;
-                left: -38%;
+                transform: translate(-30%, -130%);
+                z-index: -2;
             }
 
             & #text-3 {
-                bottom: -20%;
-                right: -37%;
+                transform: translate(30%, -200%);
             }
-
+            
             & img[src='./assets/icons/arrow-3.svg'] {
                 position: absolute;
                 width: 3.0625rem;
                 height: 3.1875rem;
-                bottom: -12%;
-                right: -30%;
+                transform: translate(30%, -50%);
+                z-index: -2;
             }
 
             & img[src='./assets/images/bookmark-purple.png'] {
                 position: absolute;
-                right: 0;
-                bottom: 7%;
-                translate: 120%;
                 width: 3.625rem;
                 height: 11.25rem;
                 transform: rotate(22deg);
+                transform: translate(-30%, -10%);
                 z-index: -2;
             }
-
+            
             & img[src='./assets/images/bookmark-yellow.png'] {
                 position: absolute;
                 right: 0;
-                bottom: 23%;
-                translate: 67%;
                 width: 3.625rem;
                 height: 11.25rem;
                 transform: rotate(11deg);
                 z-index: -1;
+                transform: translate(-30%, -10%);
             }
 
             & img[src='./assets/images/pin.png'] {
                 position: absolute;
                 left: 0;
-                bottom: -15%;
-                translate: -62%;
                 width: 4.5rem;
                 height: 5.31rem;
                 transform: rotate(-7.548deg);
                 z-index: -1;
+                transform: translate(30%, -10%);
             }
         }
 
@@ -126,13 +125,57 @@
             background: var(--pink-low);
             filter: blur(300px);
         }
+
+        &:hover #book-image img[src='./assets/icons/arrow-1.svg'] {
+            transform: translate(-215%, -2050%);
+            opacity: 1;
+        }
+    
+        &:hover #book-image #text-1 {
+            transform: translate(-100%, -1850%);
+            opacity: 1;
+        }
+    
+        &:hover #book-image img[src='./assets/icons/arrow-2.svg'] {
+            transform: translate(-401%, -95%);
+            opacity: 1;
+        }
+    
+        &:hover #book-image #text-2 {
+            transform: translate(-105%, -795%);
+            opacity: 1;
+        }
+    
+        &:hover #book-image img[src='./assets/icons/arrow-3.svg'] {
+            transform: translate(165%, 43%);
+        }
+    
+        &:hover #book-image #text-3 {
+            transform: translate(97%, 340%);
+            opacity: 1;
+        }
+    
+        &:hover #book-image img[src='./assets/images/bookmark-purple.png'] {
+            transform: translate(160%, -10%) rotate(22deg);
+            opacity: 1;
+        }
+    
+        &:hover #book-image img[src='./assets/images/bookmark-yellow.png'] {
+            transform: translate(66%, -33%) rotate(11deg);
+            opacity: 1;
+        }
+    
+        &:hover #book-image img[src='./assets/images/pin.png'] {
+            transform: translate(-61%, 33%) rotate(-10deg);
+            opacity: 1;
+        }
     }
 }
 
 @media (width >= 60em) {
     #kit {
         margin-bottom: 120px;
-        
+
         & .desktop-only {
             display: unset;
         }
@@ -147,60 +190,76 @@
             }
         }
 
-        & p {
-            font: var(--body-md) !important;
-        }
+        & #images-container {
+            margin-top: 100px;
 
-        & #book-image {
-            width: 467px !important;
-            height: 617px !important;
+            & #book-image {
+                width: 467px !important;
+                height: 617px !important;
 
-            & img[src='./assets/images/bookmark-yellow.png'] {
-                width: 172px !important;
-                height: 536px !important;
+                & img[src='./assets/images/bookmark-yellow.png'] {
+                    width: 172px !important;
+                    height: 536px !important;
+                }
+
+                & img[src='./assets/images/bookmark-purple.png'] {
+                    width: 172px !important;
+                    height: 536px !important;
+                }
+
+                & img[src='./assets/images/pin.png'] {
+                    width: 222px !important;
+                    height: 254px !important;
+                }
+
+                & img[src='./assets/icons/arrow-1.svg'] {
+                    width: 174px !important;
+                    height: 30px !important;
+                }
+
+                & img[src='./assets/icons/arrow-2.svg'] {
+                    width: 104px !important;
+                    height: 127px !important;
+                }
+
+                & img[src='./assets/icons/arrow-3.svg'] {
+                    width: 145px !important;
+                    height: 151px !important;
+                }
+
+                & .text {
+                    font: var(--body-md) !important;
+
+                    &#text-1 {
+                        transform: translate(150%, -2000%);
+                        opacity: 1;
+                    }
+
+                    &#text-2 {
+                        transform: translate(200%, -1200%);
+                        opacity: 1;
+                    }
+
+                    &#text-3 {
+                        transform: translate(130%, -450%);
+                        opacity: 1;
+                    }
+                }
             }
 
-            & img[src='./assets/images/bookmark-purple.png'] {
-                width: 172px !important;
-                height: 536px !important;
+            &:hover #book-image #text-1 {
+                transform: translate(-150%, -3000%);
+                opacity: 1;
             }
 
-            & img[src='./assets/images/pin.png'] {
-                width: 222px !important;
-                height: 254px !important;
+            &:hover #book-image #text-2 {
+                transform: translate(-156%, -1200%);
+                opacity: 1;
             }
 
-            & img[src='./assets/icons/arrow-1.svg'] {
-                width: 174px !important;
-                height: 30px !important;
-            }
-
-            & img[src='./assets/icons/arrow-2.svg'] {
-                width: 104px !important;
-                height: 127px !important;
-            }
-
-            & img[src='./assets/icons/arrow-3.svg'] {
-                width: 145px !important;
-                height: 151px !important;
-            }
-
-            & .text {
-                font: var(--body-md) !important;
-            }
-
-            & #text-1 {
-                top: -13% !important;
-                left: -40% !important;
-            }
-
-            & #text-2 {
-                left: -42% !important;
-            }
-
-            & #text-3 {
-                bottom: -18% !important;
-                right: -18% !important;
+            &:hover #book-image #text-3 {
+                transform: translate(220%, 450%);
+                opacity: 1;
             }
         }
     }

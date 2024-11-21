@@ -41,6 +41,16 @@ footer {
                     justify-content: center;
                     align-items: center;
                     gap: 8px;
+                    border-radius: 50% !important;
+                    transition: all 0.3s ease !important;
+
+                    &:hover {
+                        background-color: var(--shape-stroke) !important;
+
+                        & svg path {
+                            fill: #e2e7e9 !important;
+                        }
+                    }
                 }
             }
         }
@@ -79,6 +89,11 @@ footer {
                     text-align: right;
 
                     font: var(--link);
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                        color: #e2e7e9;
+                    }
                 }
             }
         }
@@ -93,11 +108,12 @@ footer {
             flex-direction: row;
             justify-content: space-around;
 
-            & #brand, .flex {
+            & #brand,
+            .flex {
                 padding-top: 170px;
             }
 
-            & .flex{
+            & .flex {
                 gap: 56px;
             }
         }

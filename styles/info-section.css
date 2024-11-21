@@ -2,48 +2,137 @@
     position: relative;
     align-items: center;
     margin-top: 32px;
+
     & p {
-        color: var(--text-body);
+        color: #e2e7e980;
         font: var(--body-md);
         padding: 80px 20px;
 
-        & strong {
-            color: var(--blue-light);
+        & .highlight {
             font-weight: 700;
+            transition: color 0.5s ease;
+        }
+
+        & .text {
+            transition: color 0.5s ease;
         }
     }
 
+    &:hover img{
+        display: flex !important;
+    }
+
     & img {
-        display: flex;
+        opacity: 0;
+        display: none;
         justify-content: center;
         align-items: center;
         position: absolute;
         flex-shrink: 0;
+        transform: scale(0.5);
+        transition: opacity 0.1s ease, transform 0.2s ease;
+
+        &[src*='book'],
+        &[src*='ball'] {
+            width: 40px;
+            height: 40px;
+            transform: rotate(15deg);
+        }
+    
+        &[src*='book'] {
+            top: 13%;
+            right: 22%;
+        }
+    
+        &[src*='ouija'] {
+            width: 32px;
+            height: 32px;
+            transform: rotate(-30deg);
+            left: 5%;
+            bottom: 17%;
+        }
+    
+        &[src*='ball'] {
+            bottom: 13%;
+            right: 6%;
+        }
     }
 
-    & img[src*='book'],
-    & img[src*='ball'] {
-        width: 40px;
-        height: 40px;
-        transform: rotate(15deg);
-    }
 
-    & img[src*='book'] {
-        top: 13%;
-        right: 22%;
+    &:hover img[src*='book'] {
+        animation: fade-in-grow 0.2s ease forwards;
     }
-
-    & img[src*='ouija'] {
-        width: 32px;
-        height: 32px;
-        transform: rotate(-30deg);
-        left: 5%;
-        bottom: 17%;
+    
+    &:not(:hover) img[src*='book'] {
+        animation: fade-out-shrink 0.2s ease forwards;
     }
+    
+    &:hover img[src*='ouija'] {
+        animation: fade-in-grow 0.2s ease forwards;
+        animation-delay: 0.7s;
+    }
+    
+    &:not(:hover) img[src*='ouija'] {
+        animation: fade-out-shrink 0.2s ease forwards;
+    }
+    
+    &:hover img[src*='ball'] {
+        animation: fade-in-grow 0.2s ease forwards;
+        animation-delay: 1.4s;
+    }
+    
+    &:not(:hover) img[src*='ball'] {
+        animation: fade-out-shrink 0.2s ease forwards;
+    }
+    
+    &:hover .text:nth-of-type(1) {
+        color: #e2e7e9;
+    }
+    
+    &:hover .highlight:nth-of-type(1) {
+        color: #73b6d2;
+    }
+    
+    &:hover .text:nth-of-type(2) {
+        color: #e2e7e9;
+        transition-delay: 0.7s;
+    }
+    
+    &:hover .highlight:nth-of-type(2) {
+        color: #73b6d2;
+        transition-delay: 0.7s;
+    }
+    
+    &:hover .text:nth-of-type(3) {
+        color: #e2e7e9;
+        transition-delay: 1.4s;
+    }
+    
+    &:hover .highlight:nth-of-type(3) {
+        color: #73b6d2;
+        transition-delay: 1.4s;
+    }
+}
 
-    & img[src*='ball'] {
-        bottom: 13%;
-        right: 6%;
+@keyframes fade-in-grow {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fade-out-shrink {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.5);
     }
 }
 
