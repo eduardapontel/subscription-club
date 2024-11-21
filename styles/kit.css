@@ -9,6 +9,10 @@
     & .flex {
         align-items: center;
         gap: 1rem;
+
+        & h2 {
+            font-size: 22px;
+        }
     }
 
     & p {
@@ -32,7 +36,7 @@
             margin: auto;
             width: 10rem;
             height: 13rem;
-            
+
             & * {
                 bottom: 0;
                 transition: transform 0.5s ease, opacity 0.5s ease 0.5s;
@@ -61,7 +65,7 @@
                 z-index: -2;
                 transform: translate(30%, -1300%);
             }
-            
+
             & #text-2 {
                 transform: translate(37%, -800%);
             }
@@ -77,7 +81,7 @@
             & #text-3 {
                 transform: translate(30%, -200%);
             }
-            
+
             & img[src='./assets/icons/arrow-3.svg'] {
                 position: absolute;
                 width: 3.0625rem;
@@ -94,7 +98,7 @@
                 transform: translate(-30%, -10%);
                 z-index: -2;
             }
-            
+
             & img[src='./assets/images/bookmark-yellow.png'] {
                 position: absolute;
                 right: 0;
@@ -130,41 +134,41 @@
             transform: translate(-215%, -2050%);
             opacity: 1;
         }
-    
+
         &:hover #book-image #text-1 {
-            transform: translate(-100%, -1850%);
+            transform: translate(-110%, -1850%);
             opacity: 1;
         }
-    
+
         &:hover #book-image img[src='./assets/icons/arrow-2.svg'] {
             transform: translate(-401%, -95%);
             opacity: 1;
         }
-    
+
         &:hover #book-image #text-2 {
-            transform: translate(-105%, -795%);
+            transform: translate(-120%, -795%);
             opacity: 1;
         }
-    
+
         &:hover #book-image img[src='./assets/icons/arrow-3.svg'] {
             transform: translate(165%, 43%);
         }
-    
+
         &:hover #book-image #text-3 {
-            transform: translate(97%, 340%);
+            transform: translate(130%, 340%);
             opacity: 1;
         }
-    
+
         &:hover #book-image img[src='./assets/images/bookmark-purple.png'] {
             transform: translate(160%, -10%) rotate(22deg);
             opacity: 1;
         }
-    
+
         &:hover #book-image img[src='./assets/images/bookmark-yellow.png'] {
             transform: translate(66%, -33%) rotate(11deg);
             opacity: 1;
         }
-    
+
         &:hover #book-image img[src='./assets/images/pin.png'] {
             transform: translate(-61%, 33%) rotate(-10deg);
             opacity: 1;
@@ -248,17 +252,17 @@
             }
 
             &:hover #book-image #text-1 {
-                transform: translate(-150%, -3000%);
+                transform: translate(-170%, -3000%);
                 opacity: 1;
             }
 
             &:hover #book-image #text-2 {
-                transform: translate(-156%, -1200%);
+                transform: translate(-190%, -1200%);
                 opacity: 1;
             }
 
             &:hover #book-image #text-3 {
-                transform: translate(220%, 450%);
+                transform: translate(285%, 450%);
                 opacity: 1;
             }
         }
