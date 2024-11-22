@@ -55,7 +55,7 @@ The project is organized as follows:
 - Open `index.html` in your browser.
 
 <br>
-
+ 
 ## Contributing 🤝
 
 Feel free to contribute to this project by submitting issues or pull requests. Your feedback and suggestions are always welcome!
