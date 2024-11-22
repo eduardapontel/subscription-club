@@ -10,7 +10,7 @@ The layout for this project was created by Rocketseat using Figma. You can view 
 
 The layout showcases the structure, color scheme, and visual design of the recipe page, providing a clear reference for the development of the project.
 
-<br>
+<br> 
 
 ## Project Structure 📂
 
