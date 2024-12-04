@@ -46,7 +46,6 @@
             left: 5%;
             bottom: 17%;
         }
-
         &[src*='ball'] {
             bottom: 13%;
             right: 6%;
@@ -61,7 +60,7 @@
     }
 
     &.ready:not(:hover) img {
-        visibility: visible; /* Necessário para a animação de saída */
+        visibility: visible;
         opacity: 0;
         transform: scale(0.5);
         transition: opacity 0.2s ease, transform 0.2s ease, visibility 0s 0.2s;
