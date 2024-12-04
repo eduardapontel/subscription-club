@@ -1,0 +1,270 @@
+#kit {
+    display: flex;
+    padding-block: 6.5rem 5.5rem;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 4rem;
+
+    & .flex {
+        align-items: center;
+        gap: 1rem;
+
+        & h2 {
+            font-size: 1.375rem;
+        }
+    }
+
+    & p {
+        margin-top: 0.5rem;
+        font: var(--body-sm);
+        color: var(--text-body);
+    }
+
+    & #images-container {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        margin-top: 4rem;
+
+        & #book-image {
+            position: relative;
+            background: url(../assets/images/book.png) no-repeat center / cover;
+            margin: auto;
+            width: 10rem;
+            height: 13rem;
+
+            & * {
+                bottom: 0;
+                transition: transform 0.5s ease, opacity 0.5s ease 0.5s;
+            }
+
+            & .text {
+                position: absolute;
+                color: var(--text-body);
+                text-align: center;
+                font-family: Raleway;
+                font-size: 0.625rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                z-index: -2;
+            }
+
+            & #text-1 {
+                transform: translate(37%, -1300%);
+            }
+
+            & img[src='./assets/icons/arrow-1.svg'] {
+                position: absolute;
+                width: 3.625rem;
+                height: 0.625rem;
+                z-index: -2;
+                transform: translate(30%, -1300%);
+            }
+
+            & #text-2 {
+                transform: translate(37%, -800%);
+            }
+
+            & img[src='./assets/icons/arrow-2.svg'] {
+                position: absolute;
+                width: 2.1875rem;
+                height: 2.6875rem;
+                transform: translate(-30%, -130%);
+                z-index: -2;
+            }
+
+            & #text-3 {
+                transform: translate(30%, -200%);
+            }
+
+            & img[src='./assets/icons/arrow-3.svg'] {
+                position: absolute;
+                width: 3.0625rem;
+                height: 3.1875rem;
+                transform: translate(30%, -50%);
+                z-index: -2;
+            }
+
+            & img[src='./assets/images/bookmark-purple.png'] {
+                position: absolute;
+                width: 3.625rem;
+                height: 11.25rem;
+                transform: rotate(22deg);
+                transform: translate(-30%, -10%);
+                z-index: -2;
+            }
+
+            & img[src='./assets/images/bookmark-yellow.png'] {
+                position: absolute;
+                right: 0;
+                width: 3.625rem;
+                height: 11.25rem;
+                transform: rotate(11deg);
+                z-index: -1;
+                transform: translate(-30%, -10%);
+            }
+
+            & img[src='./assets/images/pin.png'] {
+                position: absolute;
+                left: 0;
+                width: 4.5rem;
+                height: 5.31rem;
+                transform: rotate(-7.548deg);
+                z-index: -1;
+                transform: translate(30%, -10%);
+            }
+        }
+
+        & .blur {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            opacity: 0.5;
+            background: var(--pink-low);
+            filter: blur(18.75rem);
+        }
+
+        &:hover #book-image img[src='./assets/icons/arrow-1.svg'] {
+            transform: translate(-215%, -2050%);
+            opacity: 1;
+        }
+
+        &:hover #book-image #text-1 {
+            transform: translate(-110%, -1850%);
+            opacity: 1;
+        }
+
+        &:hover #book-image img[src='./assets/icons/arrow-2.svg'] {
+            transform: translate(-401%, -95%);
+            opacity: 1;
+        }
+
+        &:hover #book-image #text-2 {
+            transform: translate(-120%, -795%);
+            opacity: 1;
+        }
+
+        &:hover #book-image img[src='./assets/icons/arrow-3.svg'] {
+            transform: translate(165%, 43%);
+        }
+
+        &:hover #book-image #text-3 {
+            transform: translate(130%, 340%);
+            opacity: 1;
+        }
+
+        &:hover #book-image img[src='./assets/images/bookmark-purple.png'] {
+            transform: translate(160%, -10%) rotate(22deg);
+            opacity: 1;
+        }
+
+        &:hover #book-image img[src='./assets/images/bookmark-yellow.png'] {
+            transform: translate(66%, -33%) rotate(11deg);
+            opacity: 1;
+        }
+
+        &:hover #book-image img[src='./assets/images/pin.png'] {
+            transform: translate(-61%, 33%) rotate(-10deg);
+            opacity: 1;
+        }
+    }
+}
+
+@media (width >= 60em) {
+    #kit {
+        margin-bottom: 7.5rem;
+
+        & .desktop-only {
+            display: unset;
+        }
+
+        & .flex {
+            & img[src='./assets/icons/star.svg'] {
+                display: none;
+            }
+
+            & h2 {
+                font: var(--title-sm);
+            }
+        }
+
+        & #images-container {
+            margin-top: 6.25rem;
+
+            & #book-image {
+                width: 29.1875rem !important;
+                height: 38.5625rem !important;
+
+                & img[src='./assets/images/bookmark-yellow.png'] {
+                    width: 10.75rem !important;
+                    height: 33.5rem !important;
+                }
+
+                & img[src='./assets/images/bookmark-purple.png'] {
+                    width: 10.75rem !important;
+                    height: 33.5rem !important;
+                }
+
+                & img[src='./assets/images/pin.png'] {
+                    width: 13.875rem !important;
+                    height: 15.875rem !important;
+                }
+
+                & img[src='./assets/icons/arrow-1.svg'] {
+                    width: 10.875rem !important;
+                    height: 1.875rem !important;
+                }
+
+                & img[src='./assets/icons/arrow-2.svg'] {
+                    width: 6.5rem !important;
+                    height: 7.9375rem !important;
+                }
+
+                & img[src='./assets/icons/arrow-3.svg'] {
+                    width: 9.0625rem !important;
+                    height: 9.4375rem !important;
+                }
+
+                & .text {
+                    font: var(--body-md) !important;
+
+                    &#text-1 {
+                        transform: translate(150%, -2000%);
+                        opacity: 1;
+                    }
+
+                    &#text-2 {
+                        transform: translate(200%, -1200%);
+                        opacity: 1;
+                    }
+
+                    &#text-3 {
+                        transform: translate(130%, -450%);
+                        opacity: 1;
+                    }
+                }
+            }
+
+            &:hover #book-image #text-1 {
+                transform: translate(-170%, -3000%);
+                opacity: 1;
+            }
+
+            &:hover #book-image #text-2 {
+                transform: translate(-190%, -1200%);
+                opacity: 1;
+            }
+
+            &:hover #book-image #text-3 {
+                transform: translate(285%, 450%);
+                opacity: 1;
+            }
+        }
+    }
+}

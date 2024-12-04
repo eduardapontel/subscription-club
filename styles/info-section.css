@@ -1,0 +1,147 @@
+#info-section {
+    position: relative;
+    align-items: center;
+    margin-top: 2rem;
+
+    & p {
+        color: #e2e7e980;
+        font: var(--body-md);
+        padding: 5rem 1.25rem;
+
+        & .highlight {
+            font-weight: 700;
+            transition: color 0.5s ease;
+        }
+
+        & .text {
+            transition: color 0.5s ease;
+        }
+    }
+
+    & img {
+        visibility: hidden;
+        opacity: 0;
+        display: block;
+        position: absolute;
+        flex-shrink: 0;
+        transform: scale(0.5);
+        transition: visibility 0s, opacity 0.2s ease, transform 0.2s ease;
+
+        &[src*='book'],
+        &[src*='ball'] {
+            width: 2.5rem;
+            height: 2.5rem;
+            transform: rotate(15deg);
+        }
+
+        &[src*='book'] {
+            top: 13%;
+            right: 22%;
+        }
+
+        &[src*='ouija'] {
+            width: 2rem;
+            height: 2rem;
+            transform: rotate(-30deg);
+            left: 5%;
+            bottom: 17%;
+        }
+
+        &[src*='ball'] {
+            bottom: 13%;
+            right: 6%;
+        }
+    }
+
+    &.ready:hover img {
+        visibility: visible;
+        opacity: 1;
+        transform: scale(1);
+        transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+
+    &.ready:not(:hover) img {
+        visibility: visible; /* Necessário para a animação de saída */
+        opacity: 0;
+        transform: scale(0.5);
+        transition: opacity 0.2s ease, transform 0.2s ease, visibility 0s 0.2s;
+    }
+
+    &.ready:hover img[src*='book'] {
+        transition-delay: 0s;
+    }
+
+    &.ready:hover img[src*='ouija'] {
+        transition-delay: 0.7s;
+    }
+
+    &.ready:hover img[src*='ball'] {
+        transition-delay: 1.4s;
+    }
+
+    &.ready:hover .text:nth-of-type(1) {
+        color: #e2e7e9;
+    }
+
+    &.ready:hover .highlight:nth-of-type(1) {
+        color: #73b6d2;
+    }
+
+    &.ready:hover .text:nth-of-type(2) {
+        color: #e2e7e9;
+        transition-delay: 0.7s;
+    }
+
+    &.ready:hover .highlight:nth-of-type(2) {
+        color: #73b6d2;
+        transition-delay: 0.7s;
+    }
+
+    &.ready:hover .text:nth-of-type(3) {
+        color: #e2e7e9;
+        transition-delay: 1.4s;
+    }
+
+    &.ready:hover .highlight:nth-of-type(3) {
+        color: #73b6d2;
+        transition-delay: 1.4s;
+    }
+}
+
+@media (width >= 60em) {
+    #info-section {
+        padding: 6rem 7.5rem 5rem 7.5rem;
+
+        & p {
+            font: var(--subtitle);
+            padding: 7.125rem 2rem 9.875rem 2rem;
+        }
+
+        & img[src*='book'] {
+            width: 5.5rem;
+            height: 5.5rem;
+            top: 15%;
+            right: 48%;
+            transform: rotate(20.758deg);
+            padding: 4px;
+        }
+
+        & img[src*='ball'] {
+            width: 4.5rem;
+            height: 4.5rem;
+            bottom: 27%;
+            right: 9%;
+            transform: rotate(-14.483deg);
+            padding: 3px;
+        }
+
+        & img[src*='ouija'] {
+            width: 5rem;
+            height: 5rem;
+            left: 11%;
+            bottom: 25%;
+            transform: rotate(100deg);
+            padding: 3px;
+        }
+    }
+}
