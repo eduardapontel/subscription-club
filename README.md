@@ -16,7 +16,7 @@ The layout showcases the structure, color scheme, and visual design of the webpa
 
 The project is organized as follows:  
 - **HTML Structure**:  
-  The webpage is structured into distinct sections: 
+  The webpage is structured into sections: 
   - `#hero`: The captivating introductory section.  
   - `#info-section`: Information about the subscription.  
   - `#kit`: A showcase of the subscription kit.  
