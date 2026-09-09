@@ -18,7 +18,7 @@ The project is organized as follows:
 - **HTML Structure**:  
   The webpage is structured using distinct sections:  
   - `#hero`: The captivating introductory section.  
-  - `#info-section`: Detailed information about the subscription.  
+  - `#info-section`: Information about the subscription.  
   - `#kit`: A showcase of the subscription kit.  
   - `#subscription`: Call-to-action for signing up.  
   - `footer`: Concluding details and links.
