@@ -22,6 +22,8 @@ The project is organized as follows:
   - `#kit`: A showcase of the subscription kit.  
   - `#subscription`: Displays the plan's price and included benefits, with an option to subscribe.
   - `footer`: Contains social media and navigation links.
+ 
+<br> 
 
 - **CSS Styling**:  
   Each section has its own dedicated CSS file under the `styles` folder for modular styling:  
@@ -32,9 +34,13 @@ The project is organized as follows:
   - `footer.css`: Styles for the footer.  
   - `global.css`: Contains reusable styles applied across the project.  
   - `index.css`: Imports and integrates all styles.
+ 
+<br> 
 
 - **JavaScript**:  
   - `script.js`: Handles interactive behaviors, enhancing user engagement.
+
+<br> 
 
 - **Assets**:  
   Images and other resources are located in the `assets` folder.
