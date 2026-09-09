@@ -48,7 +48,9 @@ The project is organized as follows:
 **Or** follow the steps below to run it locally:
 
 - Clone the repository:
-   ```bash git clone https://github.com/eduardapontel/subscription-club.git```
+   ```bash
+    git clone https://github.com/eduardapontel/subscription-club.git
+   ```
 
 - Open `index.html` in your browser.
 
