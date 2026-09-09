@@ -1,6 +1,6 @@
 # Literary Charms Subscription Club ✨
 
-**Literary Charms Subscription Club** is a dynamic and responsive web page designed to captivate book enthusiasts. This project showcases animations and interactive elements, offering an engaging experience for users exploring subscription services.
+**Literary Charms Subscription Club** is a dynamic and responsive web page designed to captivate book enthusiasts. This project showcases animations and interactive elements, offering an engaging experience for users exploring the subscription services.
 
 <br>
 
