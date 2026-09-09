@@ -6,7 +6,7 @@
 
 ## Layout ✏️
 
-The layout for this project was created by Rocketseat using Figma. You can view the layout file and its components by visiting the following link: [Figma Layout](https://www.figma.com/design/qaYOzo2aE4kIMj45uhHLfM/LP-de-Clube-de-Assinatura-(Community)?m=dev).
+The layout for this project was created by Rocketseat using Figma. You can view the layout file and its components by visiting the following link: [Figma Layout](https://www.figma.com/community/file/1394686421442995256/lp-de-clube-de-assinatura).
 
 The layout showcases the structure, color scheme, and visual design of the webpage, providing a clear reference for the development of the project.
  
@@ -41,8 +41,6 @@ The project is organized as follows:
 
   <br>
 
-  <br>
-
 ## How to Access the Project 🚀
 
 - Access it directly by clicking [here](https://eduardapontel.github.io/subscription-club/).
@@ -64,4 +62,5 @@ Feel free to contribute to this project by submitting issues or pull requests. Y
 
 ## Notes 📌
 
-This page is static and does not include functionality for buttons or backend integration.
+This is a static front-end project created for demonstration purposes. This page does not include functionality for links, buttons or backend integration.
+
