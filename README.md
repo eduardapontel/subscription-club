@@ -16,12 +16,12 @@ The layout showcases the structure, color scheme, and visual design of the webpa
 
 The project is organized as follows:  
 - **HTML Structure**:  
-  The webpage is structured using distinct sections:  
+  The webpage is structured into distinct sections: 
   - `#hero`: The captivating introductory section.  
   - `#info-section`: Information about the subscription.  
   - `#kit`: A showcase of the subscription kit.  
-  - `#subscription`: Call-to-action for signing up.  
-  - `footer`: Concluding details and links.
+  - `#subscription`: Displays the plan's price and included benefits, with an option to subscribe.
+  - `footer`: Contains social media and navigation links.
 
 - **CSS Styling**:  
   Each section has its own dedicated CSS file under the `styles` folder for modular styling:  
@@ -31,7 +31,7 @@ The project is organized as follows:
   - `subscription.css`: Styles for the `#subscription` section.  
   - `footer.css`: Styles for the footer.  
   - `global.css`: Contains reusable styles applied across the project.  
-  - `index.css`: Integrates all section-specific styles for a cohesive layout.
+  - `index.css`: Imports and integrates all styles.
 
 - **JavaScript**:  
   - `script.js`: Handles interactive behaviors, enhancing user engagement.
